@@ -82,6 +82,22 @@ sub  x5,  x8,  x3      // I_Mem[4]  — 2 - 24 = -22 (0xFFFFFFEA)
 To verify hazard handling — watch `PCWrite` and `IF_ID_Write` drop to 0 during the load-use stall window. Both signals return to 1 once the hazard is resolved.
  
 ---
+
+## Hardware Verification & Waveforms
+
+The design has been validated through behavioral simulation via testbenches targeting explicit arithmetic dependency chains and load-use hazard boundaries.
+
+### 1. Steady-State Pipeline Execution
+
+During consecutive R-type and I-type operation blocks, instructions stream diagonally across the tracking lanes. The Forwarding Unit dynamically switches routing states to maintain a single-cycle execution path without requiring pipeline bubbles.
+
+![Steady-State Pipeline Simulation Waveform](pipeline-wave.png)
+
+### 2. Load-Use Hazard Stall Injection
+
+When a dependency immediately follows a memory load instruction (`lw`), the Hazard Detection Unit safely intercepts execution. It holds the Program Counter, freezes the decode registers, and injects a single-cycle NOP bubble into the execution stage until data memory access completes.
+
+![Hazard Detection Stall Simulation Waveform](hazard-stall-wave.png)
  
 ## Key Design Decisions
  
