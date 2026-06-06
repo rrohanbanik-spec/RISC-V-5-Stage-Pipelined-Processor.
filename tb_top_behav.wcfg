@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="238.401 ns"></ZoomEndTime>
+      <Cursor1Time time="2.400 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="242"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/IF_pc_current" type="array">
+      <obj_property name="ElementShortName">IF_pc_current[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF_pc_current[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/IF_instr" type="array">
+      <obj_property name="ElementShortName">IF_instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF_instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/ID_instr" type="array">
+      <obj_property name="ElementShortName">ID_instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/EX_rd" type="array">
+      <obj_property name="ElementShortName">EX_rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/MEM_rd" type="array">
+      <obj_property name="ElementShortName">MEM_rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/WB_rd" type="array">
+      <obj_property name="ElementShortName">WB_rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/PCWrite" type="logic">
+      <obj_property name="ElementShortName">PCWrite</obj_property>
+      <obj_property name="ObjectShortName">PCWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/IF_ID_Write" type="logic">
+      <obj_property name="ElementShortName">IF_ID_Write</obj_property>
+      <obj_property name="ObjectShortName">IF_ID_Write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/Control_Mux_Sel" type="logic">
+      <obj_property name="ElementShortName">Control_Mux_Sel</obj_property>
+      <obj_property name="ObjectShortName">Control_Mux_Sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/ForwardA" type="array">
+      <obj_property name="ElementShortName">ForwardA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ForwardA[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/ForwardB" type="array">
+      <obj_property name="ElementShortName">ForwardB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ForwardB[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/EX_alu_result" type="array">
+      <obj_property name="ElementShortName">EX_alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_alu_result[31:0]</obj_property>
+   </wvobject>
+</wave_config>
